@@ -36,6 +36,13 @@ int main()
 
 	return 0; 
 } 
+output: 
+/tmp/7Ye8xViFpI.o
+Write Data : hello world
+Data send is : hello wor 
+
+
+=== Code Execution Successful ===
 
 
 client program:
@@ -75,3 +82,6 @@ int main()
 
 	return 0; 
 } 
+
+output: 
+Data Received is : hello world
