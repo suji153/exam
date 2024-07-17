@@ -1,0 +1,99 @@
+1. Arithmetic Operators:
+-- Addition
+SELECT 5 + 3;
+
+-- Subtraction
+SELECT 10 - 7;
+
+-- Multiplication
+SELECT 4 * 6;
+
+-- Division
+SELECT 20 / 4;
+
+-- Modulus (Remainder)
+SELECT 15 % 4;
+
+
+-----------------------------------------------------------------
+
+2. Comparison Operators:
+-- Equal to
+SELECT * FROM employees WHERE department_id = 1001;
+
+-- Not equal to
+SELECT * FROM employees WHERE department_id <> 1001;
+
+-- Greater than
+SELECT * FROM employees WHERE employee_id > 2;
+
+-- Less than
+SELECT * FROM employees WHERE employee_id < 5;
+
+-- Greater than or equal to
+SELECT * FROM employees WHERE department_id >= 1001;
+
+-- Less than or equal to
+SELECT * FROM employees WHERE department_id <= 1002;
+--------------------------------------------------------------
+
+3. Logical Operators:
+-- AND
+SELECT * FROM employees WHERE department_id = 1001 AND first_name = 'John';
+
+
+-- OR
+SELECT * FROM employees WHERE department_id = 1001 OR department_id = 1002;
+
+-- NOT
+SELECT * FROM employees WHERE NOT department_id = 1001;
+--------------------------------------------------------------
+
+
+4. String Functions:
+-- CONCAT
+SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM employees;
+
+-- SUBSTRING
+SELECT SUBSTRING(first_name, 1, 3) AS initials FROM employees;
+
+-- UPPER
+SELECT UPPER(last_name) AS last_name_upper FROM employees;
+
+-- LOWER
+SELECT LOWER(first_name) AS first_name_lower FROM employees;
+-----------------------------------------------------------------
+
+
+5. Mathematical Functions:
+-- ABS
+SELECT ABS(-10) AS absolute_value;
+
+-- SQRT
+SELECT SQRT(25) AS square_root;
+
+-- POWER
+SELECT POWER(2, 3) AS power;
+
+-- ROUND
+SELECT ROUND(3.14159, 2) AS rounded_pi;
+-----------------------------------------------------
+
+
+
+6. Aggregate Functions:
+-- COUNT
+SELECT COUNT(*) AS total_employees FROM employees;
+
+-- SUM
+SELECT SUM(salary) AS total_salary FROM employees;
+
+-- AVG
+SELECT AVG(salary) AS average_salary FROM employees;
+
+-- MAX
+SELECT MAX(salary) AS max_salary FROM employees;
+
+-- MIN
+SELECT MIN(salary) AS min_salary FROM employees;
+
