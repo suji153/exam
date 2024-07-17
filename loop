@@ -1,0 +1,17 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+    i NUMBER := 1;
+BEGIN
+    -- WHILE loop
+    WHILE i <= 5 LOOP
+        DBMS_OUTPUT.PUT_LINE('Value of i: ' || i);
+        i := i + 1;
+    END LOOP;
+
+    -- FOR loop
+    FOR j IN 1..5 LOOP
+        DBMS_OUTPUT.PUT_LINE('Value of j: ' || j);
+    END LOOP;
+END;
+/
