@@ -1,0 +1,28 @@
+1. INNER JOIN:
+SELECT employees.employee_id, employees.first_name, employees.last_name, departments.department_name
+FROM employees
+INNER JOIN departments ON employees.department_id = departments.department_id;
+
+
+2. LEFT JOIN (or LEFT OUTER JOIN):
+SELECT employees.employee_id, employees.first_name, employees.last_name, departments.department_name
+FROM employees
+LEFT JOIN departments ON employees.department_id = departments.department_id;
+
+3. RIGHT JOIN (or RIGHT OUTER JOIN):
+SELECT employees.employee_id, employees.first_name, employees.last_name, departments.department_name
+FROM employees
+RIGHT JOIN departments ON employees.department_id = departments.department_id;
+
+
+4. FULL JOIN (or FULL OUTER JOIN):
+SELECT employees.employee_id, employees.first_name, employees.last_name, departments.department_name
+FROM employees
+FULL JOIN departments ON employees.department_id = departments.department_id;
+
+5. CROSS JOIN:
+SELECT employees.employee_id, employees.first_name, employees.last_name, departments.department_name
+FROM employees
+CROSS JOIN departments;
+
+These examples demonstrate different types of joins in SQL, including INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, and CROSS JOIN. Depending on your specific requirements and the structure of your tables, you can choose the appropriate join type to retrieve the desired data.
